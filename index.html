@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link rel="stylesheet" href="styleCalculator.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="title">JS Calculator</h1>
+        <!-- <p class="author">By Andrés Bolívar</p> -->
+    </header>
+    <section class="calculator">
+        <div class="system">
+            <div class="screen">
+                <input class="display" type="number"></input>
+            </div>
+            <div class="operators">
+                <button>+</button>
+                <button>-</button>
+                <button>&times;</button>
+                <button>&divide;</button>
+            </div>
+            <div class="keyboard">
+                <div class="numbersParent">
+                    <div class="numbers">
+                        <button id="7">7</button>
+                        <button id="8">8</button>
+                        <button id="9">9</button>
+                    </div>
+                    <div class="numbers">
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                    </div>
+                    <div class="numbers">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+                    <div class="numbers2">
+                        <button>0</button>
+                        <button>.</button>
+                        <button>C</button>
+                    </div>
+                </div>
+                <button class="equal">=</button>
+            </div>
+        </div>    
+    </section>
+    <script src="calculator.js"></script>
+</body>
+</html>
