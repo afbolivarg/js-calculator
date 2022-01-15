@@ -1,57 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>JS Calculator</title>
-    <link rel="stylesheet" href="styleCalculator.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='./styles.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1 class="title">JS Calculator</h1>
-        <!-- <p class="author">By Andrés Bolívar</p> -->
+        <div class='logo-container'>
+            <img class='logo' src='https://img.icons8.com/ios-filled/100/ffffff/math.png'/>
+            <h1 class='title'>JS Calculator</h1>
+        </div>
+        <p class='author'>Coded by <a href='https://github.com/afbolivarg' target='_blank'>Andrés Bolívar</a></p>
     </header>
-    <section class="calculator">
-        <div class="system">
-            <div class="screen">
-                <input class="display" type="number"></input>
+    <main>
+        <div class='calculator'>
+            <div class='output'>
+                <div class='previous-operation'>878 +</div>
+                <div class='current-operation'>23523</div>
             </div>
-            <div class="operators">
-                <button>+</button>
-                <button>-</button>
-                <button>&times;</button>
-                <button>&divide;</button>
-            </div>
-            <div class="keyboard">
-                <div class="numbersParent">
-                    <div class="numbers">
-                        <button id="7">7</button>
-                        <button id="8">8</button>
-                        <button id="9">9</button>
-                    </div>
-                    <div class="numbers">
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
-                    </div>
-                    <div class="numbers">
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                    </div>
-                    <div class="numbers2">
-                        <button>0</button>
-                        <button>.</button>
-                        <button>C</button>
-                    </div>
-                </div>
-                <button class="equal">=</button>
-            </div>
-        </div>    
-    </section>
-    <script src="calculator.js"></script>
+            <button class='delete'>DEL</button>
+            <button class='big-btn all-clear'>AC</button>
+            <button class='operator'>÷</button>
+            <button class='number'>7</button>
+            <button class='number'>8</button>
+            <button class='number'>9</button>
+            <button class='operator'>×</button>
+            <button class='number'>4</button>
+            <button class='number'>5</button>
+            <button class='number'>6</button>
+            <button class='operator'>+</button>
+            <button class='number'>1</button>
+            <button class='number'>2</button>
+            <button class='number'>3</button>
+            <button class='operator'>-</button>
+            <button class='bottom-left'>0</button>
+            <button class='number'>.</button>
+            <button class='big-btn bottom-right equal'>=</button>    
+        </div>
+    </main>
+    <script src='calculator.js'></script>
 </body>
 </html>
