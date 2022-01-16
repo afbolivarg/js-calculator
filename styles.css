@@ -50,7 +50,7 @@ main {
 .calculator {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: minmax(120px, auto) repeat(6, 85px);
+    grid-template-rows: minmax(110px, auto) repeat(6, 85px);
     width: 90%;
     max-width: 400px;
 }
@@ -58,8 +58,9 @@ main {
     grid-column: 1/-1;
     background-color: rgba(0, 0, 0, 0.65);
     padding: 10px;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     align-items: flex-end;
     border: black solid 1px;
